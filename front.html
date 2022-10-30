@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front Casa</title>
+    <link rel="stylesheet" href="front.css">
+</head>
+<body>
+    <div>
+        <img src="./imagens/logo.jpg" alt="Logo Smart Home" class="logo"/>
+    </div>
+    <div>
+        <img src="./imagens/casa.jpg" alt="Casa e seus quartos" class="quartos"/>
+    </div>
+    <div class="textoExp">
+        <h2 class="titulo">Projeto de Auutomação Residencial</h2>
+        <p class="texto">Projeto realizado por alunos do IBMEC com o objetico de aprimorar conhecimentos em arduino e desenvolvimento de hardware e software. (Inserir mais informações do projeto...)</p>
+    </div>
+    <div class="container">
+        <div class="toggle">
+            <div class="toggle-button" onclick="Animatedtoggle()"></div>
+        </div>
+        <div class="text">OFF</div>
+        <div class="description">Varanda 1</div>
+    </div>
+    <div class="container1">
+        <div class="toggle1">
+            <div class="toggle-button1" onclick="Animatedtoggle1()"></div>
+        </div>
+        <div class="text1">OFF</div>
+        <div class="description">Quarto 3</div>
+    </div>
+    <div class="container2">
+        <div class="toggle2">
+            <div class="toggle-button2" onclick="Animatedtoggle2()"></div>
+        </div>
+        <div class="text2">OFF</div>
+        <div class="description">Varanda 2</div>
+    </div>
+    <div class="container3">
+        <div class="toggle3">
+            <div class="toggle-button3" onclick="Animatedtoggle3()"></div>
+        </div>
+        <div class="text3">OFF</div>
+        <div class="description">Quarto 2</div>
+    </div>
+    <div class="container4">
+        <div class="toggle4">
+            <div class="toggle-button4" onclick="Animatedtoggle4()"></div>
+        </div>
+        <div class="text4">OFF</div>
+        <div class="description">Garagem</div>
+    </div>
+    <div class="container5">
+        <div class="toggle5">
+            <div class="toggle-button5" onclick="Animatedtoggle5()"></div>
+        </div>
+        <div class="text5">OFF</div>
+        <div class="description">Quarto-1</div>
+    </div>
+    <div class="container6">
+        <div class="toggle6">
+            <div class="toggle-button6" onclick="Animatedtoggle6()"></div>
+        </div>
+        <div class="text6">OFF</div>
+        <div class="description">Cozinha</div>
+    </div>
+    <div class="container7">
+        <image src="./imagens/ar_respiravel.jpg" alt="Ar respirável" id = "images"/>
+    </div>
+
+
+
+    <script>
+
+        let toggle = document.querySelector(".toggle");
+        let text = document.querySelector(".text");
+
+        function Animatedtoggle(){
+            toggle.classList.toggle("active");
+            if(toggle.classList.contains("active")){
+                text.innerHTML = "ON"
+            }
+            else{
+                text.innerHTML = "OFF"
+            }
+        }
+
+        let toggle1 = document.querySelector(".toggle1");
+        let text1 = document.querySelector(".text1");
+
+        function Animatedtoggle1(){
+            toggle1.classList.toggle("active");
+            if(toggle1.classList.contains("active")){
+                text1.innerHTML = "ON"
+            }
+            else{
+                text1.innerHTML = "OFF"
+            }
+        }
+
+        let toggle2 = document.querySelector(".toggle2");
+        let text2 = document.querySelector(".text2");
+
+        function Animatedtoggle2(){
+            toggle2.classList.toggle("active");
+            if(toggle2.classList.contains("active")){
+                text2.innerHTML = "ON"
+            }
+            else{
+                text2.innerHTML = "OFF"
+            }
+        }
+
+        let toggle3 = document.querySelector(".toggle3");
+        let text3 = document.querySelector(".text3");
+
+        function Animatedtoggle3(){
+            toggle3.classList.toggle("active");
+            if(toggle3.classList.contains("active")){
+                text3.innerHTML = "ON"
+            }
+            else{
+                text3.innerHTML = "OFF"
+            }
+        }
+
+        let toggle4 = document.querySelector(".toggle4");
+        let text4 = document.querySelector(".text4");
+
+        function Animatedtoggle4(){
+            toggle4.classList.toggle("active");
+            if(toggle4.classList.contains("active")){
+                text4.innerHTML = "ON"
+            }
+            else{
+                text4.innerHTML = "OFF"
+            }
+        }
+        
+        let toggle5 = document.querySelector(".toggle5");
+        let text5 = document.querySelector(".text5");
+
+        function Animatedtoggle5(){
+            toggle5.classList.toggle("active");
+            if(toggle5.classList.contains("active")){
+                text5.innerHTML = "OFF"
+            }
+            else{
+                text5.innerHTML = "OFF"
+            }
+        }
+
+        let toggle6 = document.querySelector(".toggle6");
+        let text6 = document.querySelector(".text6");
+
+        function Animatedtoggle6(){
+            toggle6.classList.toggle("active");
+            if(toggle6.classList.contains("active")){
+                text6.innerHTML = "ON"
+            }
+            else{
+                text6.innerHTML = "OFF"
+            }
+        }
+
+        const img = document.getElementById("images");
+
+        let toggle_img = true;
+
+        img.addEventListener("click", function(){
+            toggle_img = !toggle_img;
+            if(toggle_img){
+                img.src = "./imagens/ar_respiravel.jpg"
+            }
+            else{
+                img.src = "./imagens/ar_nao_respiravel.jpg"
+            }
+        })
+
+    </script>
+</body>
+</html>

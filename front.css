@@ -1,0 +1,432 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    position: relative;
+    background: rgba(0, 247, 255, 0.233);
+}
+.logo{
+    display: block;
+    margin-left:auto;
+    margin-right: auto;
+    width: 50%;
+    max-width: 25%;
+    height: auto;
+}
+.quartos{
+    display: block;
+    margin-left: auto;
+    margin-right: 1%;
+    width: 100%;
+    max-width: 25%;
+    height: auto;
+}
+.text{
+    display: block;
+    margin-left:auto;
+    margin-right: auto;
+    width: 50%;
+    max-width: 25%;
+    height: auto;
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+.container .toggle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90px;
+    height: 50px;
+    background: #444;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+.container .toggle .toggle-button{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 40px;
+    height: 40px;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.container .toggle.active{
+    background: cornflowerblue;
+}
+.container .toggle.active .toggle-button{
+    left: 45px;
+}
+.container .text{
+    position: absolute;
+    left:95px;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 10px;
+
+}
+.container .description{
+    position: absolute;
+    left:95px;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 100px;
+    width: 150px;
+}
+.container1{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+.container1 .toggle1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90px;
+    height: 50px;
+    background: #444;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+.container1 .toggle1 .toggle-button1{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 40px;
+    height: 40px;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.container1 .toggle1.active{
+    background: cornflowerblue;
+}
+.container1 .toggle1.active .toggle-button1{
+    left: 45px;
+}
+.container1 .text1{
+    position: absolute;
+    left:95px;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 10px;
+
+}
+.container1 .description{
+    position: absolute;
+    left:95px;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 100px;
+    width: 150px;
+}
+.container2{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+.container2 .toggle2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90px;
+    height: 50px;
+    background: #444;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+.container2 .toggle2 .toggle-button2{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 40px;
+    height: 40px;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.container2 .toggle2.active{
+    background: cornflowerblue;
+}
+.container2 .toggle2.active .toggle-button2{
+    left: 45px;
+}
+.container2 .text2{
+    position: absolute;
+    left:95px;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 10px;
+
+}
+.container2 .description{
+    position: absolute;
+    left:95px;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 100px;
+    width: 150px;
+}
+.container3{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+.container3 .toggle3{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90px;
+    height: 50px;
+    background: #444;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+.container3 .toggle3 .toggle-button3{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 40px;
+    height: 40px;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.container3 .toggle3.active{
+    background: cornflowerblue;
+}
+.container3 .toggle3.active .toggle-button3{
+    left: 45px;
+}
+.container3 .text3{
+    position: absolute;
+    left:95px;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 10px;
+
+}
+.container3 .description{
+    position: absolute;
+    left:95px;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 100px;
+    width: 150px;
+}
+.container4{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+.container4 .toggle4{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90px;
+    height: 50px;
+    background: #444;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+.container4 .toggle4 .toggle-button4{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 40px;
+    height: 40px;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.container4 .toggle4.active{
+    background: cornflowerblue;
+}
+.container4 .toggle4.active .toggle-button4{
+    left: 45px;
+}
+.container4 .text4{
+    position: absolute;
+    left:95px;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 10px;
+
+}
+.container4 .description{
+    position: absolute;
+    left:95px;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 100px;
+    width: 150px;
+}
+.container5{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+.container5 .toggle5{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90px;
+    height: 50px;
+    background: #444;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+.container5 .toggle5 .toggle-button5{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 40px;
+    height: 40px;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.container5 .toggle5.active{
+    background: cornflowerblue;
+}
+.container5 .toggle5.active .toggle-button5{
+    left: 45px;
+}
+.container5 .text5{
+    position: absolute;
+    left:95px;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 10px;
+
+}
+.container5 .description{
+    position: absolute;
+    left:95px;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 100px;
+    width: 150px;
+}
+.container6{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+.container6 .toggle6{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90px;
+    height: 50px;
+    background: #444;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+.container6 .toggle6 .toggle-button6{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 40px;
+    height: 40px;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.container6 .toggle6.active{
+    background: cornflowerblue;
+}
+.container6 .toggle6.active .toggle-button6{
+    left: 45px;
+}
+.container6 .text6{
+    position: absolute;
+    left:95px;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 10px;
+
+}
+.container6 .description{
+    position: absolute;
+    left:95px;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 100px;
+    width: 150px;
+}
+.container7{
+    position: absolute;
+    top: 20%;
+    left: 15%;
+}
+.container7 img{
+    width: 200%;
+    height: auto;
+}
+.textoExp{
+    position: absolute;
+    top: 50%;
+    left: 15%;
+}
+.textoExp .titulo{
+    position: absolute;
+    top: -60%;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.textoExp .texto{
+    position: relative;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 500px;
+}
